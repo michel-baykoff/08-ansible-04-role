@@ -23,14 +23,14 @@
 
 ### Конфигурация
 
-- Для изменения дефолтных параметров смотрите файлы main.yaml в директориях `playbook/roles/clickhouse/defaults`, `playbook/roles/vector-role/defaults` и `playbook/roles/lighthouse-role/defaults`
+- Для изменения дефолтных параметров смотрите файлы main.yaml в директориях `playbook/roles/clickhouse/defaults`, `playbook/roles/vector/defaults` и `playbook/roles/lighthouse/defaults`
 - Конфигурация Вектора дополнительно может быть настроена через шаблоны `playbook/roles/vector/templates/vector.service.j2` и `playbook/roles/vector/templates/vector.toml.j2`
-- Конфигурация lighthouse дополнительно может быть настроена через шаблоны `playbook/roles/lighthouse-role/templates/lighthouse.conf.j2`
+- Конфигурация lighthouse дополнительно может быть настроена через шаблоны `playbook/roles/lighthouse/templates/lighthouse.conf.j2`
 
 ### Установка
 
 - Перед запуском плейбука перейдите в директорию `playbook`
-- Установите зависимости через `ansible-galaxy install -r requirements.yaml`
+- Установите зависимости через `ansible-galaxy install -r requirements.yaml -p roles`
 - Cкорректируйте файл `playbook/inventory/prod.yaml` указав хосты и способы подключения.
 
 ```
@@ -48,4 +48,4 @@ ansible-playbook -i inventory/prod.yaml site.yml
 
 ## Права
 
-- Данный плейбук создан студентом Байковым Михаилом и предполагает свободное копирование и распространение.
+- Данный плейбук создан студентом Байковым Михаилом и предполагает свободное копирование, изменение и распространение.

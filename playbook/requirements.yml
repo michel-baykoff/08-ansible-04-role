@@ -5,9 +5,10 @@
   name: clickhouse
 - src: git@github.com:michel-baykoff/vector-role.git
   scm: git
-  version: "1.0.0"
+  version: "1.0.1"
   name: vector
 - src: git@github.com:michel-baykoff/lighthouse-role.git
   scm: git
   version: "1.0.0"
   name: lighthouse
+  
